@@ -29,7 +29,7 @@ func main() {
 
 	db.Create(&User{}) // Figure out how to convert json data into a struct that can be used to update sqlite.
 
-	req, err := http.Get("https://api.nasa.gov/insight_weather/?api_key=0urOUYPFipLzQ9ZF40IvOrFZ429ql8ns7XlwJV0O&feedtype=json&ver=1.0")
+	req, err := http.Get("https://api.nasa.gov/insight_weather/?api_key=<KEY>&feedtype=json&ver=1.0")
 	if err != nil {
 		log.Fatal(err)
 	}
